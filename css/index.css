@@ -1,150 +1,150 @@
 * {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: rgba(0, 0, 0, 0.75);
-  font-family: 'Ubuntu Condensed', sans-serif;
-  margin: 0 0 25vh 0;
-  overflow-x: hidden;
-}
-
-.Profile {
-  background-position: 50% 40%;
-  background-size: 50vw auto;
-  background-repeat: no-repeat;
-  border: none;
-  color: transparent;
-  display: block;
-  filter: grayscale(100%) brightness(50%);
-  font-size: 32px;
-  height: 14.28vh;
-  margin: 0 auto;
-  transition: all 0.25s ease;
-  width: 50vw;
-  opacity: 0.95;
-}
-
-.Profile > * {
-  color: white;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-.Profile:hover,
-.Profile:focus {
-  cursor: pointer;
-  filter: grayscale(0%) brightness(100%);
-  outline: none;
-}
-
-.Profile:focus-within,
-.Profile:focus {
-  filter: grayscale(0%) brightness(100%) !important;
-}
-
-.memberLabel,
-.memberInfo {
-  display: none;
-}
-
-.memberLabel {
-  top: 0;
-  left: 0;
-  padding-left: 5vmin;
-  position: absolute;
-}
-
-.memberInfo {
-  background-color: rgba(0, 0, 0, 0.1);
-  bottom: 0;
-  border-radius: 15% 0 0 0;
-  right: 0;
-  position: absolute;
-  float: right;
-  font-size: initial;
-  max-width: 35%;
-  padding: 0 2vmin;
-  transition: all 0.25s ease;
-  text-align: left;
-}
-
-.memberInfo:active,
-.memberInfo:focus,
-.memberInfo:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  outline: none;
-}
-
-#BTSLogo {
-  top: 20vh;
-  left: 3vw;
-  padding: 10vmin;
-  position: fixed;
-}
-
-#BTSLogo img {
-  filter: grayscale(100%);
-  transition: all 0.5s ease;
-}
-
-#BTSLogo img:hover,
-#BTSLogo img:focus {
-  filter: grayscale(0%) saturate(200%);
-  outline: none;
-}
-
-#Background-S {
-  width: 30vw;
-  height: 100vh;
-  background-image: url("../img/Background-S.png");
-  background-position: 0px -40vh;
-  background-repeat: no-repeat;
-  position: fixed;
-  top: 0;
-  right: 0;
-  transition: all 0.25s ease;
-  z-index: -1;
-}
-
-#Background-S:hover {
-  filter: drop-shadow(0 0 2px white);
-}
-
-@keyframes intro {
-  from {
-    opacity: 0;
-  } to {
-    opacity: 1;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  @keyframes intro {
-    from {
-      opacity: 0;
-      width: 0;
-      margin-left: 0;
-    } to {
-      opacity: 1;
-      width: 100vw;
-      margin-left: 0;
-    }
-  }
-  .Profile {
-    background-size: 100vw auto;
-    width: 100vw;
-  }
-  
-  #BTSLogo {
-    top: 0;
-    left: 0;
-    text-align: center;
-    position: relative;
-  }
-
-  #Background-S {
-    width: 100vw;
-    background-position: 10vw -25vh;
-  }
-
-}
+   box-sizing: border-box;
+ }
+ 
+ body {
+   background-color: rgba(0, 0, 0, 0.75);
+   font-family: 'Ubuntu Condensed', sans-serif;
+   margin: 0 0 25vh 0;
+   overflow-x: hidden;
+ }
+ 
+ .Profile {
+   background-position: 50% 40%;
+   background-size: 50vw auto;
+   background-repeat: no-repeat;
+   border: none;
+   color: transparent;
+   display: block;
+   filter: grayscale(100%) brightness(50%);
+   font-size: 32px;
+   height: 14.28vh;
+   margin: 0 auto;
+   transition: all 0.25s ease;
+   width: 50vw;
+   opacity: 0.95;
+ }
+ 
+ .Profile > * {
+   color: white;
+   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .Profile:hover,
+ .Profile:focus {
+   cursor: pointer;
+   filter: grayscale(0%) brightness(100%);
+   outline: none;
+ }
+ 
+ .Profile:focus-within,
+ .Profile:focus {
+   filter: grayscale(0%) brightness(100%) !important;
+ }
+ 
+ .memberLabel,
+ .memberInfo {
+   display: none;
+ }
+ 
+ .memberLabel {
+   top: 0;
+   left: 0;
+   padding-left: 5vmin;
+   position: absolute;
+ }
+ 
+ .memberInfo {
+   background-color: rgba(0, 0, 0, 0.1);
+   bottom: 0;
+   border-radius: 15% 0 0 0;
+   right: 0;
+   position: absolute;
+   float: right;
+   font-size: initial;
+   max-width: 35%;
+   padding: 0 2vmin;
+   transition: all 0.25s ease;
+   text-align: left;
+ }
+ 
+ .memberInfo:active,
+ .memberInfo:focus,
+ .memberInfo:hover {
+   background-color: rgba(0, 0, 0, 0.5);
+   outline: none;
+ }
+ 
+ #KANNALogo {
+   top: 20vh;
+   left: 3vw;
+   padding: 10vmin;
+   position: fixed;
+ }
+ 
+ #KANNALogo img {
+   filter: grayscale(100%);
+   transition: all 0.5s ease;
+ }
+ 
+ #KANNALogo img:hover,
+ #KANNALogo img:focus {
+   filter: grayscale(0%) saturate(200%);
+   outline: none;
+ }
+ 
+ #Background-S {
+   width: 30vw;
+   height: 100vh;
+   background-image: url("../img/Background-S.png");
+   background-position: 0px -40vh;
+   background-repeat: no-repeat;
+   position: fixed;
+   top: 0;
+   right: 0;
+   transition: all 0.25s ease;
+   z-index: -1;
+ }
+ 
+ #Background-S:hover {
+   filter: drop-shadow(0 0 2px white);
+ }
+ 
+ @keyframes intro {
+   from {
+     opacity: 0;
+   } to {
+     opacity: 1;
+   }
+ }
+ 
+ @media only screen and (max-width: 650px) {
+   @keyframes intro {
+     from {
+       opacity: 0;
+       width: 0;
+       margin-left: 0;
+     } to {
+       opacity: 1;
+       width: 100vw;
+       margin-left: 0;
+     }
+   }
+   .Profile {
+     background-size: 100vw auto;
+     width: 100vw;
+   }
+   
+   #KANNALogo {
+     top: 0;
+     left: 0;
+     text-align: center;
+     position: relative;
+   }
+ 
+   #Background-S {
+     width: 100vw;
+     background-position: 10vw -25vh;
+   }
+ 
+ }
