@@ -1,49 +1,49 @@
-let btsMembers = [
-  "V",
-  "Suga",
-  "Jungkook",
-  "RM",
-  "J-Hope",
-  "Jimin",
-  "Jin",
+let kanna = [
+   "Kanna 01",
+   "Kanna 02",
+   "Kanna 03",
+   "Kanna 04",
+   "Kanna 05",
+   "Kanna 06",
+   "Kanna 07",
 ]
 
-let btsInfo = {
-  "V": {
-    "name": "Kim Tae Hyung (김태형)",
-    "role": "Dancer, Vocalist, Visual",
-    "birthday": "1995-12-30",
-  },
-  "Suga": {
-    "name": "Min Yoon Gi (민윤기)",
-    "role": "Rapper",
-    "birthday": "1993-03-09",
-  },
-  "Jungkook": {
-    "name": "Jeon Jeong-guk (전정국)",
-    "role": "Dancer, Vocalist, Visual",
-    "birthday": "1997-09-01",
-  },
-  "RM": {
-    "name": "Kim Nam Joon (김남준)",
-    "role": "Leader, Rapper",
-    "birthday": "1994-09-12",
-  },
-  "J-Hope": {
-    "name": "Jung Ho Seok (정호석)",
-    "role": "Dancer, Rapper",
-    "birthday": "1994-02-18",
-  },
-  "Jimin": {
-    "name": "Park Ji Min (박지민)",
-    "role": "Dancer, Vocalist",
-    "birthday": "1995-10-13",
-  },
-  "Jin": {
-    "name": "Kim Seok Jin (김석진)",
-    "role": "Visual, Vocalist",
-    "birthday": "1992-12-04",
-  },
+let kannaInfo = {
+   "Kanna 01": {
+      "name": "KANNA 01",
+      "role": "01",
+      "birthday": "2021-05-01",
+    },
+   "Kanna 02": {
+      "name": "KANNA 02",
+      "role": "02",
+      "birthday": "2021-05-01",
+   },
+   "Kanna 03": {
+      "name": "KANNA 03",
+      "role": "03",
+      "birthday": "2021-05-01",
+   },
+   "Kanna 04": {
+      "name": "KANNA 04",
+      "role": "04",
+      "birthday": "2021-05-01",
+   },
+   "Kanna 05": {
+      "name": "KANNA 05",
+      "role": "05",
+      "birthday": "2021-05-01",
+   },
+   "Kanna 06": {
+      "name": "KANNA 06",
+      "role": "06",
+      "birthday": "2021-05-01",
+   },
+   "Kanna 07": {
+      "name": "KANNA 07",
+      "role": "07",
+      "birthday": "2021-05-01",
+   },
 }
 
 function Button(id = "", className = "") {
@@ -76,7 +76,7 @@ function calculateAge(birthday) {
   return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
 
-function Info(memberName, infoList = btsInfo) {
+function Info(memberName, infoList = kannaInfo) {
   let memberInfo = infoList[memberName];
   memberInfo["age"] = calculateAge(memberInfo["birthday"]);
   let div = Div(memberName + "Info", "memberInfo");
@@ -103,7 +103,7 @@ function showMember(member) {
   member.collapsed = false;
 }
 
-function collapseProfile(member, initHeight = (100 / btsMembers.length) + "vh") {
+function collapseProfile(member, initHeight = (100 / kanna.length) + "vh") {
   member.style.height = initHeight;
   member.style.filter = "grayscale(100%) brightness(50%)";
   document.getElementById(member.id + "Label").style.display = "none";
@@ -135,7 +135,7 @@ function toggle(member, members) {
   }
 }
 
-function Profile(memberName = "Jungkook") {
+function Profile(memberName = "Kanna 01") {
   let button = Button(memberName, "Profile");
   button.textContent = memberName + " Profile";
   button.collapsed = true;
@@ -164,8 +164,8 @@ function Profile(memberName = "Jungkook") {
   return button;
 }
 
-function Profiles(memberList = btsMembers) {
-  let div = Div("BTS", "wrapper");
+function Profiles(memberList = kanna) {
+  let div = Div("KANNA", "wrapper");
   for (let i = 0; i < memberList.length; i++) {
     let member = Profile(memberList[i]);
     member.style.animation = "intro " + Math.log(i + 2) + "s";
