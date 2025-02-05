@@ -1,4 +1,4 @@
-let kanna = [
+let kannaMembers = [
    "Kanna 01",
    "Kanna 02",
    "Kanna 03",
@@ -103,7 +103,7 @@ function showMember(member) {
   member.collapsed = false;
 }
 
-function collapseProfile(member, initHeight = (100 / kanna.length) + "vh") {
+function collapseProfile(member, initHeight = (100 / kannaMembers.length) + "vh") {
   member.style.height = initHeight;
   member.style.filter = "grayscale(100%) brightness(50%)";
   document.getElementById(member.id + "Label").style.display = "none";
@@ -164,7 +164,7 @@ function Profile(memberName = "Kanna 01") {
   return button;
 }
 
-function Profiles(memberList = kanna) {
+function Profiles(memberList = kannaMembers) {
   let div = Div("KANNA", "wrapper");
   for (let i = 0; i < memberList.length; i++) {
     let member = Profile(memberList[i]);
